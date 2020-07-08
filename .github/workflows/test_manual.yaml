@@ -1,4 +1,4 @@
-﻿name: Test manual action run
+name: Test manual action run
 on:
   workflow_dispatch:
     inputs:
