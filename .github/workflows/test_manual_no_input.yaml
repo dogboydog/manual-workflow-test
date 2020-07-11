@@ -1,0 +1,13 @@
+﻿name: Test manual action run with no input
+on:
+  workflow_dispatch:
+
+jobs:
+  activation:
+    name: Print the input
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print puppy type
+        id: printPuppyType
+        run: 'There is no puppy for this job with no inputs :('
+        
