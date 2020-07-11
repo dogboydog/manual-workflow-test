@@ -1,7 +1,7 @@
 ﻿name: Test manual action run with no input
 on:
   workflow_dispatch: 
-    inputs: {}
+    inputs: []
 
 jobs:
   activation:
