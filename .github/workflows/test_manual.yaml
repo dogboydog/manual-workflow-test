@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       puppy:
-        description: 'A kind of puppy.'
+        description: 'An updated kind of puppy.'
         required: true
 
 jobs:
@@ -14,5 +14,5 @@ jobs:
       # Request manual activation file
       - name: Print puppy type
         id: printPuppyType
-        run: echo The puppy is ${{ github.event.inputs.puppy }}
+        run: echo The updated puppy is ${{ github.event.inputs.puppy }}
         
