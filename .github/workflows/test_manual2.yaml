@@ -1,0 +1,24 @@
+name: Second manual test
+
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  activation:
+    name: Print the input
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print input
+        id: printLogLevel
+        run: 'echo "The log level is $INPUT_LOGLEVEL"'
+            
+        

@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: Print puppy type
         id: printPuppyType
-        run: 'There is no puppy for this job with no inputs :('
+        run: 'echo "There is no puppy for this job with no inputs :("'
         
