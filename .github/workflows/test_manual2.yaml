@@ -7,7 +7,10 @@ on:
         description: 'Log level'
         required: true
         default: 'warning'
-        
+
+env:
+  OTHER_ENV: Maria
+
 defaults:
   run:
     shell: bash
@@ -19,6 +22,7 @@ jobs:
     steps:
       - name: Print input
         id: printLogLevel
-        run: 'echo "The log level is $INPUT_LOGLEVEL"'
-            
+        run: |
+          echo "The log level is $INPUT_LOGLEVEL"
+          echo "The other env variable is $OTHER_ENV"  
         
