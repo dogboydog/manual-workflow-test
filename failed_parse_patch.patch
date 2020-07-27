@@ -1,0 +1,23 @@
+Index: .github/workflows/quick_build.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .github/workflows/quick_build.yaml	(revision 976bf688492ab5c161b78bed7282b2d4085c3f18)
++++ .github/workflows/quick_build.yaml	(revision a5762b6b4f2940a46be1b1ee3b87b32d6e54023b)
+@@ -1,12 +1,11 @@
+-name: Single build and upload
++﻿name: Single build and upload
+ 
+ on:
+   workflow_dispatch:
+     inputs:
+-      logLevel:
+-        description: 'Log level'
++      gitRef:
++        description: 'Enter the git ref (branch, commit hash, tag, etc.) to build.'
+         required: true
+-        default: 'warning'
+ 
+ env:
+   # unity license details
