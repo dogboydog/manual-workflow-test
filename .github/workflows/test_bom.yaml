@@ -1,4 +1,4 @@
-﻿name: Test manual action run
+﻿name: Test bom
 on:
   workflow_dispatch:
     inputs:
