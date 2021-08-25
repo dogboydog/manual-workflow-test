@@ -18,6 +18,13 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  environment_settings:
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+    steps:
+      - name: "Test Deploy Env"
+        run: echo "$GITHUB_REF...$GITHUB_WORKFLOW"
   # This workflow contains a single job called "greet"
   greet:
     # The type of runner that the job will run on
